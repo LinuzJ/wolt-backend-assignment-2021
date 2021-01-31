@@ -7,6 +7,7 @@ app = Flask(__name__)
 
 @app.route('/discovery')
 def api():
+    
     # getting the user data
     lat_user  = float(request.args.get('lat', None))
     lon_user  = float(request.args.get('lon', None))
