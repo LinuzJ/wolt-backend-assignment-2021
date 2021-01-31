@@ -1,8 +1,7 @@
 from flask import Flask, request
 import requests
 import json
-from distance import get_distance
-from helpers import sort_by_distance, sort_by_popularity, sort_by_date
+from helpers import sort_by_distance, sort_by_popularity, sort_by_date, get_distance
 
 app = Flask(__name__)
 
