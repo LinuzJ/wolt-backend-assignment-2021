@@ -1,6 +1,6 @@
 # Wolt Backend assignment
 
-A flask-driven restful API for the Wolt Backend assignment
+A flask-driven restful API for the **[Wolt Backend assignment] (https://github.com/woltapp/summer2021-internship)**
 
 ## Technologies used
 
