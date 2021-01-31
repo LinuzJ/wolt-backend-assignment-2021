@@ -45,10 +45,6 @@ A flask-driven restful API for the Wolt Backend assignment
   (venv)$ pip install flask
   ```
 
-  ```
-
-  ```
-
 - #### Running It
   On your terminal, run the server using this one simple command:
   ```
