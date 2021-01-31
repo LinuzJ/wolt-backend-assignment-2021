@@ -16,16 +16,16 @@ def api():
     restaurants = json.loads(restaurant_data.content)["restaurants"]
 
     sorted_restaurants = sort_by_distance(restaurants, lat_user, lon_user)
-    
+
     return_data = {
         "sections": [
             {
                 "title": "Popular Restaurants",
-                "restaurants": sort_by_popularity(sorted_restaurants)[:10]
+                "restaurants": sort_by_popularity(sorted_restaurants)
             },
             {
                 "title": "New Restaurants",
-                "restaurants": sort_by_date(sorted_restaurants)[:10]
+                "restaurants": sort_by_date(sorted_restaurants)
             },
             {
                 "title": "Nearby Restaurants",

@@ -18,7 +18,11 @@ def sort_by_distance(data, lat, lon):
 
 
 def sort_by_popularity(data):
-    return sorted(data, key=lambda k: k["popularity"], reverse=True)
+    newList = sorted(data, key=lambda k: k["popularity"], reverse=True)
+    if len(newList) > 10:
+        return newList[:10]
+    else:
+        return newList
 
 def d_months(date1, date2):
     return (date1.year - date2.year) * 12 + date1.month - date2.month   
@@ -32,4 +36,7 @@ def sort_by_date(data):
     
     sorted_list = sorted(filtered, key=lambda restaurant: restaurant['launch_date'], reverse=True)
 
-    return sorted_list
+    if len(sorted_list) > 10:
+        return sorted_list[:10]
+    else:
+        return sorted_list
