@@ -33,7 +33,6 @@ A flask-driven restful API for the Wolt Backend assignment
 
      ```
      $ virtualenv -p python3 venv
-     $ pip install autoenv
      $ source venv/bin/activate
      ```
 
